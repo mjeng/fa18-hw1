@@ -49,4 +49,7 @@ def scrabble(word)
     z: 10,
   }
   # Q5 CODE HERE
+  scrabble_val = 0
+  word.each_char { |chr| scrabble_val += values[chr.to_sym] }
+  return scrabble_val
 end
